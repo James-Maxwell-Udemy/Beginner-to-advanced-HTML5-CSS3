@@ -1,0 +1,4 @@
+.main-container > p {
+  color: crimson;
+  border: 2px solid green;
+}

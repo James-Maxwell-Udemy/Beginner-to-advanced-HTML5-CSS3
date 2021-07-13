@@ -1,0 +1,4 @@
+.dummy-list h2 + p {
+  color: crimson;
+  border: 2px solid blue;
+}

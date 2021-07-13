@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./props/svg/01-hero_section/01-logo.svg"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Synchronize</title>
+  </head>
+  <body>
+    <!-------------------------------- Hero-Section ----------------------------->
+    <div class="hero-section">
+      <nav class="navbar">
+        <input id="nav-toggle" type="checkbox" />
+        <a href="#">
+          <img
+            src="./props/svg/01-hero_section/01-logo.svg"
+            alt="logo"
+            class="nav-logo"
+          />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#app-section">App</a></li>
+          <li><a href="#why-section">Why Synchronize?</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#plan-section">Plans</a></li>
+          <li><a href="#support-section">Support</a></li>
+        </ul>
+
+        <div class="open-btn btn">
+          <a href="#">Open Synchronize</a>
+        </div>
+
+        <label for="nav-toggle" class="icon-burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+      </nav>
+
+      <!-- Hero Text -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Collaboration</h1>
+          <h1>Redefined</h1>
+        </div>
+
+        <div class="hero-images">
+          <!-- Bouncing Images -->
+          <img
+            src="./props/svg/01-hero_section/02-left-man.svg"
+            alt="left-man"
+            class="left-man bounce-1"
+          />
+          <img
+            src="./props/svg/01-hero_section/03-right-man.svg"
+            alt="right-man"
+            class="right-man bounce-2"
+          />
+        </div>
+      </div>
+
+      <!-- Hero Description -->
+      <div class="hero-desc">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Commodi quia, nobis corrupti voluptate modi.
+        </p>
+
+        <div class="download-btn btn">
+          <img
+            src="./props/svg/01-hero_section/04-signal-wave.svg"
+            alt="signal"
+            class="signal blink"
+          />
+          <a href="#">Download Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- App-Section ----------------------------->
+
+    <div class="app-section" id="app-section">
+      <!-- Bottom Triangle -->
+      <div class="backdrop"></div>
+
+      <!-- App -->
+      <div class="app-window app-layout">
+        <div class="app-server-nav">
+          <!-- Window Close, Minimize, maximize  -->
+          <div class="app-window-buttons">
+            <span class="red dot"></span>
+            <span class="yellow dot"></span>
+            <span class="green dot"></span>
+          </div>
+
+          <!-- Servers -->
+          <div class="app-servers">
+            <div class="server-1 server" style="background-color: #00ffd1">
+              <img
+                src="./props/svg/02-app_section/01-server_section/01-beared.svg"
+                alt="avatar"
+                style="height: 100%"
+              />
+            </div>
+            <div class="server-2 server" style="background-color: #2a9d8f">
+              <img
+                src="./props/svg/02-app_section/01-server_section/02-rocket.svg"
+                alt="avatar"
+                style="height: 100%"
+              />
+            </div>
+            <div class="server-3 server" style="background-color: #e9c46a">
+              <img
+                src="./props/svg/02-app_section/01-server_section/03-dashboard.svg"
+                alt="avatar"
+                style="height: 100%"
+              />
+            </div>
+            <div class="server-4 server" style="background-color: #f4a261">
+              <img
+                src="./props/svg/02-app_section/01-server_section/04-learning.svg"
+                alt="avatar"
+                style="height: 100%"
+              />
+            </div>
+            <div class="server-5 server" style="background-color: #e76f51">
+              <img
+                src="./props/svg/02-app_section/01-server_section/05-hologram.svg"
+                alt="avatar"
+                style="height: 100%"
+              />
+            </div>
+            <div class="server-6 server" style="background-color: #e63946">
+              <img
+                src="./props/svg/02-app_section/01-server_section/06-strategy.svg"
+                alt="avatar"
+                style="height: 80%"
+              />
+            </div>
+            <div class="server-7 server" style="background-color: #bfffa9">
+              <img
+                src="./props/svg/02-app_section/01-server_section/07-chemicals.svg"
+                alt="avatar"
+                style="height: 60%"
+              />
+            </div>
+            <div class="server-8 server" style="background-color: #a8dadc">
+              <img
+                src="./props/svg/02-app_section/01-server_section/08-timer.svg"
+                alt="avatar"
+                style="height: 90%"
+              />
+            </div>
+          </div>
+
+          <img
+            src="./props/svg/02-app_section/01-server_section/09-logo.svg"
+            alt="app-logo"
+            class="app-logo"
+          />
+        </div>
+
+        <!-- App Contact List Nav -->
+        <div class="app-contacts-nav">
+          <input type="text" id="search-box" placeholder="Search" />
+          <button class="new-button">New Chat Room</button>
+
+          <!-- Team Info -->
+          <div class="team-info">
+            <div class="team-dp">
+              <img
+                src="./props/svg/02-app_section/02-contacts_section/01-beared.svg"
+                alt="avatar"
+              />
+            </div>
+
+            <div class="team-info-text">
+              <h5>Dimitri's Team</h5>
+              <br />
+              <h6>App Team</h6>
+              <br />
+              <p>56 members</p>
+            </div>
+          </div>
+
+          <!-- App Contacts -->
+          <div class="app-contacts">
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/01-dimitri.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Admin - Dimitri</h6>
+                <br />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/02-tanya.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Tanya</h6>
+                <br />
+                <p>Tenetur, voluptate. Vero qui, voluptates</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/03-steve.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Steve</h6>
+                <br />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/04-natally.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Natally</h6>
+                <br />
+                <p>dolor sit amet consectetur. Lorem, dolor</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/05-andrea.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Andrea</h6>
+                <br />
+                <p>dolor sit amet consectetur. Lorem, dolor</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/06-forrest.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Forrest</h6>
+                <br />
+                <p>dolor sit amet consectetur. Lorem, dolor</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/07-vincy.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Vincy</h6>
+                <br />
+                <p>dolor sit amet consectetur. Lorem, dolor</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/08-patt.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Patt</h6>
+                <br />
+                <p>dolor sit amet consectetur. Lorem, dolor</p>
+              </div>
+            </div>
+
+            <div class="app-contacts-list">
+              <img
+                src="./props/images/app/01-contacts_section/09-angela.jpeg"
+                alt="avatar"
+              />
+
+              <div class="contacts-info">
+                <h6>Angela</h6>
+                <br />
+                <p>dolor sit amet consectetur. Lorem, dolor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Chat Section-->
+        <div class="app-chat-section">
+          <!-- App Chat Section Navbar -->
+          <div class="app-chat-section-nav">
+            <h4>Dimitri's team</h4>
+            <div class="chat-users">
+              <img
+                src="./props/images/app/02-chat_section/05-andrea.jpeg"
+                alt="avatar"
+                style="z-index: 5"
+              />
+              <img
+                src="./props/images/app/02-chat_section/03-steve.jpeg"
+                alt="avatar"
+                style="z-index: 4"
+              />
+              <img
+                src="./props/images/app/02-chat_section/06-forrest.jpeg"
+                alt="avatar"
+                style="z-index: 3"
+              />
+              <img
+                src="./props/images/app/02-chat_section/02-tanya.jpeg"
+                alt="avatar"
+                style="z-index: 2"
+              />
+              <div class="add-user">+</div>
+            </div>
+          </div>
+
+          <!-- App Chat History -->
+          <div class="app-chat-history">
+            <div class="chat-history-1 chat-history">
+              <img
+                src="./props/images/app/02-chat_section/01-dimitri.jpeg"
+                alt="avatar"
+                class="chat-history-dp"
+              />
+              <div class="chat-history-text">
+                <h6>Dimitri</h6>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+
+            <div class="chat-history-2 chat-history">
+              <img
+                src="./props/images/app/02-chat_section/05-andrea.jpeg"
+                alt="avatar"
+                class="chat-history-dp"
+              />
+              <div class="chat-history-text">
+                <h6>Andrea</h6>
+                <img
+                  src="./props/images/app/02-chat_section/10-stocks.jpg"
+                  alt="stocks"
+                  class="stocks"
+                />
+                <p>Dolore dolor quas sunt. Voluptatibus quasi culpa.</p>
+              </div>
+            </div>
+
+            <div class="chat-history-3 chat-history">
+              <div class="chat-history-text">
+                <h6>Audio</h6>
+                <img
+                  src="./props/svg/02-app_section/03-chat_section/01-audio-message.svg"
+                  alt="audio-message"
+                />
+              </div>
+            </div>
+
+            <div class="chat-history-1 chat-history">
+              <img
+                src="./props/images/app/02-chat_section/03-steve.jpeg"
+                alt="avatar"
+                class="chat-history-dp"
+              />
+              <div class="chat-history-text">
+                <h6>Steve</h6>
+                <p>adipisicing elit. Doloribus, nam? dolor sit.</p>
+              </div>
+            </div>
+
+            <div class="chat-history-1 chat-history">
+              <img
+                src="./props/images/app/02-chat_section/04-natally.jpeg"
+                alt="avatar"
+                class="chat-history-dp"
+              />
+              <div class="chat-history-text">
+                <h6>Natally</h6>
+                <p>
+                  Pariatur voluptatum ut a modi voluptas numquam dignissimos
+                  officia ipsa dolorem commodi deserunt repudiandae hic delectus
+                  alias nostrum repellat ex consectetur atque praesentium quam.
+                  Pariatur, possimus necessitatibus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- App Text Bar -->
+          <div class="app-text-bar">
+            <div class="text-bar-left">
+              <ion-icon
+                name="mic-outline"
+                style="margin-right: 10px"
+              ></ion-icon>
+              <p>Type Something</p>
+            </div>
+            <div class="text-bar-right">
+              <ion-icon name="image-outline"></ion-icon>
+              <ion-icon name="person-outline"></ion-icon>
+              <ion-icon name="send-outline" class="send-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Right Nav -->
+        <div class="app-right-nav">
+          <!-- App User Info -->
+          <div class="app-user">
+            <img
+              src="./props/images/app/02-chat_section/03-steve.jpeg"
+              alt="avatar"
+              class="app-user"
+            />
+            <div class="app-user-info">
+              <h4>Forrest</h4>
+              <br />
+              <p>UI/UX Designer</p>
+            </div>
+            <ion-icon name="cog-outline" class="cog-outline"></ion-icon>
+          </div>
+
+          <!-- App Widgets -->
+          <div class="app-widgets">
+            <h4>Widgets</h4>
+            <div class="widget widget-1">
+              <p>Calender</p>
+              <img
+                src="./props/svg/02-app_section/04-right_bar/01-calendar.svg"
+              />
+            </div>
+            <div class="widget widget-2">
+              <p>World Clock</p>
+              <img
+                src="./props/svg/02-app_section/04-right_bar/02-world-clock.svg"
+              />
+            </div>
+            <div class="widget widget-3">
+              <p>Weather</p>
+              <img
+                src="./props/svg/02-app_section/04-right_bar/03-thermo.svg"
+              />
+            </div>
+            <div class="widget widget-4">
+              <p>Stocks</p>
+              <img
+                src="./props/svg/02-app_section/04-right_bar/04-stocks.svg"
+              />
+            </div>
+            <div class="widget widget-5">
+              <p>Invitations</p>
+              <img
+                src="./props/svg/02-app_section/04-right_bar/05-invitation.svg"
+              />
+            </div>
+          </div>
+
+          <!-- App Media -->
+          <div class="app-media">
+            <h4>Media</h4>
+            <div class="app-media-grid">
+              <div class="grid-item item-1">
+                <img
+                  src="./props/svg/02-app_section/04-right_bar/06-ebooks.svg"
+                  style="height: auto"
+                />
+              </div>
+              <div class="grid-item item-2">
+                <img
+                  src="./props/svg/02-app_section/04-right_bar/07-blog.svg"
+                  style="height: auto"
+                />
+              </div>
+              <div class="grid-item item-3">
+                <img
+                  src="./props/svg/02-app_section/04-right_bar/08-design.svg"
+                  style="height: auto"
+                />
+              </div>
+              <div class="grid-item item-4">
+                <img
+                  src="./props/svg/02-app_section/04-right_bar/09-product_release.svg"
+                  style="height: 80px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------- StatsBar ------------------------------------>
+
+    <div class="stats-section">
+      <div class="stats-1 stats">
+        <h3>25+</h3>
+        <p>Servers</p>
+      </div>
+      <div class="stats-2 stats">
+        <h3>100k+</h3>
+        <p>Users</p>
+      </div>
+      <div class="stats-3 stats">
+        <h3>15+</h3>
+        <p>Commands</p>
+      </div>
+      <div class="stats-4 stats">
+        <h3>∞</h3>
+        <p>Possibilities</p>
+      </div>
+    </div>
+
+    <!-------------------------------- Why-Synchronize ----------------------------->
+
+    <div class="why-section" id="why-section">
+      <div class="why-section-left">
+        <h2><span style="color: #ff2441">Why</span> Synchronize?</h2>
+        <br /><br />
+        <h4>
+          Powerful way to colloborate with <br />
+          the most robust bot out in market.
+        </h4>
+        <img
+          src="./props/svg/03-why_section/01-L-angle.svg"
+          alt="angle"
+          class="l-angle"
+        />
+
+        <ul class="key-points">
+          <li>
+            <h4>Friendly Layout</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              placeat error a odio, temporibus enim aliquam dolorem unde
+              sapiente dicta.
+            </p>
+          </li>
+
+          <li>
+            <h4>Platform Independent</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus pariatur ea animi impedit totam quas fuga delectus
+              veniam quidem obcaecati voluptates ullam, mollitia qui rem?
+              Laudantium dolores suscipit deleniti error.
+            </p>
+          </li>
+
+          <li>
+            <h4>Kick start with no Manual</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              placeat error a odio, temporibus enim aliquam dolorem unde
+              sapiente dicta.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="why-section-right">
+        <img src="./props/svg/03-why_section/02-bot.svg" alt="bot" />
+      </div>
+    </div>
+
+    <!-------------------------------- About-Section ----------------------------->
+    <div class="about-section" id="about-section">
+      <div class="about-section-content">
+        <img
+          src="./props/svg/04-details_section/01-work_space.svg"
+          alt="image"
+        />
+        <p>
+          <span class="about-span">Plethora of Workspace</span> ipsum dolor sit
+          amet consectetur, adipisicing elit. Unde labore similique rem maxime
+          optio pariatur vel omnis! Neque voluptatem culpa numquam assumenda
+          rem.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="about-section-content">
+        <p>
+          <span class="about-span">Hassle-free Communication</span> Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Unde labore similique
+          rem maxime optio pariatur vel omnis! Neque voluptatem culpa numquam
+          voluptas quos laboriosam, ipsam nobis, eligendi possimus, assumenda
+          rem.
+        </p>
+        <img
+          src="./props/svg/04-details_section/02-communication.svg"
+          alt="image"
+        />
+      </div>
+    </div>
+
+    <!-------------------------------- Plan-Section ----------------------------->
+    <div class="plan-section" id="plan-section">
+      <div class="plan-title">
+        <h2>Go further with premium</h2>
+        <p>
+          Switch to premium and unlock tonne of
+          <span style="color: #00ffe0">elite features</span>.
+        </p>
+      </div>
+
+      <div class="card-section">
+        <div class="card-1 card">
+          <header class="card-header">
+            <h3>Basic Plan</h3>
+            <p>For students and testing purposes</p>
+          </header>
+          <div class="card-plan">
+            <h3>$Free</h3>
+            <p>Upto 3 servers</p>
+            <p>4 people conference</p>
+            <p>30 mins live streaming</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="card-2 card">
+          <header class="card-header">
+            <h3>Starter Plan</h3>
+            <p>For startups to collaborate and accomplish tasks</p>
+          </header>
+          <div class="card-plan">
+            <h3>$99/mo</h3>
+            <p>Upto 100 servers</p>
+            <p>Unlimited people group calls</p>
+            <p>4 hrs of live streaming</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="card-3 card">
+          <header class="card-header">
+            <h3>Mega Plan</h3>
+            <p>For large scale collaborations</p>
+          </header>
+          <div class="card-plan">
+            <h3>$299/mo</h3>
+            <p>∞ Services</p>
+            <p>Work with no limits</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- Support-Section ----------------------------->
+    <div class="support-section" id="support-section">
+      <div class="support-header">
+        <h2>Need help?</h2>
+      </div>
+      <div class="support-article">
+        <form>
+          <div class="container">
+            <h2>Subscribe to our Newsletter</h2>
+            <input type="text" placeholder="Name" name="name" required />
+            <input
+              type="text"
+              placeholder="Email address"
+              name="mail"
+              required
+            />
+            <select name="profession">
+              <option value="options" disabled selected hidden>
+                Select your profession
+              </option>
+              <option value="option-1">Student</option>
+              <option value="option-2">Business organization</option>
+              <option value="option-3">Other</option>
+            </select>
+            <label class="check-box">
+              <input type="checkbox" name="subscribe" />
+              Weekly Newsletter
+            </label>
+            <input type="submit" value="Subscribe" />
+          </div>
+        </form>
+        <img src="./props/svg/05-help_section/01-help.svg" alt="help" />
+      </div>
+    </div>
+
+    <!-------------------------------- Footer-Section ----------------------------->
+    <footer class="footer">
+      <div class="footer-top footer-nav">
+        <a href="/"
+          ><img
+            src="./props/svg/06-footer/01-logo.svg"
+            alt="logo"
+            class="footer-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-bottom footer-nav">
+        <p>SYNCHRONIZE LICENSING &COPY; ALL RIGHTS RESERVED 2021</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>

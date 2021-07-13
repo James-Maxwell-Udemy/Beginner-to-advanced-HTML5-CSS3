@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box-1 {
+  background-color: #00d0ff;
+  border: 0px solid #0400ff;
+}
+
+.box-2 {
+  background-color: #00cf80;
+  border: 0px solid #8400ff;
+}

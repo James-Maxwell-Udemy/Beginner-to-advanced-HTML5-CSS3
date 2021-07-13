@@ -1,0 +1,193 @@
+/* ++++++++++++++++++++++++++++++++++++++++ Base Setup ++++++++++++++++++++++++++++++++++++++ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: #fcf9ff;
+}
+
+a {
+  text-decoration: none;
+  color: #fcf9ff;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ Hero-Section ++++++++++++++++++++++++++++++++++++++ */
+
+.hero-section {
+  width: 100vw;
+  height: 1080px;
+  background-color: #0c1014;
+}
+
+/* ========================================================================================== */
+/* NAVBAR */
+.navbar {
+  height: 80px;
+  width: 100vw;
+  background-color: rgba(12, 16, 20, 0.5);
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.nav-logo {
+  height: 35px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 0 60%;
+}
+
+.nav-links li a {
+  font-size: 22px;
+  font-weight: 400;
+  background: linear-gradient(to right, #0066ff 0%, #00ffe0 50%, #fcf9ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.3s ease;
+}
+
+/* Navbar-links hover */
+.nav-links a:hover {
+  background-position: 0 100%;
+}
+
+/* Button-design Reusable */
+.btn {
+  width: 200px;
+  height: 40px;
+  border: 1px groove #008cff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to right,
+    #0066ff 0%,
+    #00ffe0 50%,
+    #0c1014 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  border: none;
+  font-weight: 600;
+}
+
+/* ========================================================================================== */
+
+/* Hero-Title */
+.hero-content {
+  position: relative;
+  text-align: center;
+  font-size: 12vw;
+  font-weight: 600;
+  top: 15%;
+}
+
+.hero-content h1:first-of-type {
+  background-image: linear-gradient(to right bottom, #f53c95, #0044ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero-content h1:last-of-type {
+  background-image: linear-gradient(to right bottom, #004bfa, #02f18e);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* Hero Images */
+.hero-images {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 15%;
+  padding: 0 5px;
+}
+
+.hero-images img {
+  width: 15vw;
+  height: auto;
+}
+
+/* Hero Description */
+.hero-desc {
+  text-align: center;
+  position: relative;
+  top: 25%;
+  width: 100%;
+}
+
+.hero-desc p {
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.download-btn {
+  margin: 5% auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.signal {
+  position: absolute;
+  height: 100px;
+  width: auto;
+  left: 160px;
+  top: -50px;
+  transform: rotate(-10deg);
+}

@@ -1,0 +1,124 @@
+/* ++++++++++++++++++++++++++++++++++++++++ Base Setup ++++++++++++++++++++++++++++++++++++++ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-weight: 300;
+  font-size: 10px;
+  color: #fcf9ff;
+}
+
+a {
+  text-decoration: none;
+  color: #fcf9ff;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ Hero Section ++++++++++++++++++++++++++++++++++++++ */
+
+.hero-section {
+  width: 100%;
+  height: 1000px;
+  background-color: #0c1014;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ Navbar ++++++++++++++++++++++++++++++++++++++ */
+
+.navbar {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 0 100px;
+}
+
+.nav-logo {
+  height: 35px;
+  width: auto;
+  float: left;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+.nav-links {
+  float: left;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 120px;
+  margin-top: 30px;
+}
+
+.nav-links a {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Button-design Reusable */
+.btn {
+  width: 200px;
+  height: 40px;
+  border: 1px groove #008cff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  float: right;
+  margin-top: 20px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ Hero Title ++++++++++++++++++++++++++++++++++++++ */
+
+.hero-content {
+  text-align: center;
+  font-size: 150px;
+  font-weight: 600;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.hero-desc {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+}
+
+.hero-desc p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+}

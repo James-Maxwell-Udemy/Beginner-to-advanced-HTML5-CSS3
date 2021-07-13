@@ -1,0 +1,643 @@
+/* ++++++++++++++++++++++++++++++++++++++++ Base Setup ++++++++++++++++++++++++++++++++++++++ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: #fcf9ff;
+}
+
+a {
+  text-decoration: none;
+  color: #fcf9ff;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ Hero-Section ++++++++++++++++++++++++++++++++++++++ */
+
+.hero-section {
+  width: 100vw;
+  height: 1080px;
+  background-color: #0c1014;
+}
+
+/* ========================================================================================== */
+/* NAVBAR */
+.navbar {
+  height: 80px;
+  width: 100vw;
+  background-color: rgba(12, 16, 20, 0.5);
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.nav-logo {
+  height: 35px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+}
+
+.nav-links li a {
+  font-size: 22px;
+  font-weight: 400;
+  background: linear-gradient(to right, #0066ff 0%, #00ffe0 50%, #fcf9ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.3s ease;
+}
+
+/* Navbar-links hover */
+.nav-links a:hover {
+  background-position: 0 100%;
+}
+
+/* Button-design Reusable */
+.btn {
+  width: 200px;
+  height: 40px;
+  border: 1px groove #008cff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to right,
+    #0066ff 0%,
+    #00ffe0 50%,
+    #0c1014 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  border: none;
+  font-weight: 600;
+}
+
+/* ========================================================================================== */
+/* Hero-Title */
+.hero-content {
+  position: relative;
+  text-align: center;
+  font-size: 12vw;
+  font-weight: 600;
+  top: 15%;
+}
+
+.hero-content h1:first-of-type {
+  background-image: linear-gradient(to right bottom, #f53c95, #0044ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero-content h1:last-of-type {
+  background-image: linear-gradient(to right bottom, #004bfa, #02f18e);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* Hero Images */
+.hero-images {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 15%;
+  padding: 0 5px;
+}
+
+.hero-images img {
+  width: 15vw;
+  height: auto;
+}
+
+/* Hero Description */
+.hero-desc {
+  text-align: center;
+  position: relative;
+  top: 25%;
+  width: 100%;
+}
+
+.hero-desc p {
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.download-btn {
+  margin: 5% auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.signal {
+  position: absolute;
+  height: 100px;
+  width: auto;
+  left: 160px;
+  top: -50px;
+  transform: rotate(-10deg);
+}
+
+/*++++++++++++++++++++++++++++++++++++++++ App-Section ++++++++++++++++++++++++++++++++++++++ */
+/* Backdrop */
+.app-section {
+  height: 1000px;
+  width: 100vw;
+  position: relative;
+  background-image: linear-gradient(to right top, #1100ff 0%, #6f00ff 100%);
+}
+
+.backdrop {
+  height: 1000px;
+  width: 100vw;
+  background-image: linear-gradient(to left bottom, #ff004d 0%, #ff3d00 100%);
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+/* ========================================================================================== */
+/* App Window */
+.app-window {
+  width: 1400px;
+  height: 85%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px 10px #000;
+}
+
+.app-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+/* ========================================================================================== */
+/* App Left Navbar */
+.app-server-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 0 0 5%;
+  overflow: hidden;
+}
+
+.app-window-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  margin-top: 20%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.dot:nth-child(1) {
+  background-color: #ff0000;
+}
+
+.dot:nth-child(2) {
+  background-color: #ffbb00;
+}
+
+.dot:nth-child(3) {
+  background-color: #03c203;
+}
+
+.app-servers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.server {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+.server:hover {
+  box-shadow: 0 0 5px 4px #fcf9ff;
+}
+
+.app-logo {
+  margin-bottom: 20%;
+  height: 40px;
+  width: auto;
+}
+
+/* ========================================================================================== */
+/* App Contacts List Nav */
+.app-contacts-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  flex: 0 0 20%;
+  background-color: #161b1f;
+}
+
+#search-box {
+  width: 90%;
+  height: 40px;
+  margin-top: 15px;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.new-button {
+  margin-top: 20px;
+  padding: 6px;
+  width: 80%;
+  background-color: #0f3ce0;
+  border: none;
+  color: #fcf9ff;
+  border-radius: 5px;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.new-button:hover {
+  background-color: #0f58e0;
+}
+
+/* Team Info */
+.team-info {
+  margin-top: 10%;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #0e101a;
+}
+
+.team-dp img {
+  background-color: #00ffd1;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.team-dp:hover {
+  box-shadow: 0 0 5px 4px #00b694;
+}
+
+/* App Contacts */
+.app-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.app-contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  transition: all 0.05s ease-in-out;
+}
+
+.app-contacts-list:hover {
+  background-color: #1d222f;
+}
+
+.app-contacts-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10%;
+}
+
+.contacts-info p {
+  font-size: 10px;
+}
+
+/* ========================================================================================== */
+/* App Chat Section  */
+.app-chat-section {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 55%;
+  padding: 20px;
+}
+
+/* App Chat Section Navbar */
+.app-chat-section-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-users img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: -5px;
+}
+
+.add-user {
+  background-color: #00aee5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: -5px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* ========================================================================================== */
+/* App Chat History */
+.app-chat-history {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 5%;
+}
+
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.chat-history-dp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chat-history-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 60px;
+  padding: 10px;
+  height: 100%;
+  background-color: #181b26;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+.chat-history-text h6 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #02f18e;
+}
+
+.chat-history-text p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.chat-history:not(:first-of-type) {
+  margin-top: 50px;
+}
+
+.chat-history-2 .stocks {
+  height: 190px;
+  width: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-history-3 img {
+  height: 55%;
+}
+
+/* ========================================================================================== */
+/* App Text Bar */
+.app-text-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #2b2e3c;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.text-bar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  font-size: 14px;
+}
+
+.text-bar-right {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0 0 20%;
+  border-left: 2px solid black;
+}
+
+ion-icon {
+  font-size: 20px;
+  color: #fcf9ff;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+ion-icon:hover {
+  color: #02f18e;
+}
+
+.send-outline {
+  color: #379e73;
+}
+
+/* ========================================================================================== */
+/* App Right Nav */
+.app-right-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 0 0 20%;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #161b1f;
+  padding: 10px;
+}
+
+/* ========================================================================================== */
+/* App User Info */
+.app-user {
+  width: 100%;
+  background-color: #0e101a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.app-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.app-user-info {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-user-info p {
+  color: #6d6d6d;
+  font-size: 14px;
+}
+
+.cog-outline {
+  color: #6d6d6d;
+  font-size: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.cog-outline:hover {
+  transform: rotate(90deg);
+}
+
+/* ========================================================================================== */
+/* App Widgets */
+.app-widgets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.widget {
+  background-color: #0e101a;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.widget img {
+  height: 35px;
+}
+
+.widget-4 img,
+.widget-5 img {
+  height: 30px;
+}
+
+.widget:hover {
+  background-color: #1d222f;
+  color: #02f18e;
+}
