@@ -19,8 +19,6 @@ Q7: Are the videos downloadable? A: No! to avoid piracy, I have disabled the dow
 
 Q8: I want to put the project in my portfolio. Is that allowed? A: Absolutely! Just make sure you actually built them yourself by following the course, and that you understand what you did. What is not allowed is that you create your own course/videos/articles based on this course's content!
 
-Q9: I love your courses and want to get updates on new courses. How? A: Firstly, I appriciate your enthusiasm. I make important announcements on twitter @devarsenal1, instagram @devarsenal_official, linkedin @Devarsenal-Tech. So you should definitely follow me wherever possible 🤝
+Q9: How do I get my certificate of completion? A: A certificate of completion is provided by Udemy after you complete 100% of the course. After completing the course, just click on the "Your progress" indicator in the top right-hand corner of the course page. If you want to change your name on the certificate, please contact the Udemy support team.
 
-Q10: How do I get my certificate of completion? A: A certificate of completion is provided by Udemy after you complete 100% of the course. After completing the course, just click on the "Your progress" indicator in the top right-hand corner of the course page. If you want to change your name on the certificate, please contact the Udemy support team.
-
-Q11: Do you accept pull requests? A: No, for the simple reason that I want this repository to contain the exact same code that is shown in the videos. However, please feel free to add an issue if you found one.
+Q10: Do you accept pull requests? A: No, for the simple reason that I want this repository to contain the exact same code that is shown in the videos. However, please feel free to add an issue if you found one.
